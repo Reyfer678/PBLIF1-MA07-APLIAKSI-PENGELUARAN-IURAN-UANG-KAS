@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - IuranKas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-box">
+
+            <div class="logo">
+                <div class="logo-icon">IK</div>
+                <h1>IuranKas</h1>
+                <p>Aplikasi Pengelolaan Iuran Kas Kelas</p>
+            </div>
+
+            <div class="login-title">
+                <h2>Selamat Datang</h2>
+                <p>Silakan masuk ke akun Anda</p>
+            </div>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Masukkan username"
+                        autocomplete="username"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-wrapper">
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Masukkan password"
+                            autocomplete="current-password"
+                        >
+                        <button
+                            type="button"
+                            id="togglePassword"
+                            class="toggle-password"
+                        >Lihat</button>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember">
+                        <input type="checkbox" id="remember">
+                        Ingat saya
+                    </label>
+                    <a href="#" id="forgotPassword">Lupa password?</a>
+                </div>
+
+                <p id="message" class="message" role="alert"></p>
+
+                <button type="submit" class="login-button">
+                    Masuk
+                </button>
+            </form>
+
+            <div class="login-footer">
+                <p>&copy; 2026 IuranKas</p>
+                <p>Pengelolaan Kas Kelas yang Teratur dan Transparan</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
